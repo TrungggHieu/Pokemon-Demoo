@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package controller;
 
 import java.awt.BorderLayout;
@@ -22,10 +18,7 @@ import javax.swing.JProgressBar;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.TitledBorder;
 
-/**
- *
- * @author DuyDL2
- */
+
 public class MainFrame extends JFrame implements ActionListener, Runnable {
 
     private static final long serialVersionUID = 1L;
@@ -108,7 +101,7 @@ public class MainFrame extends JFrame implements ActionListener, Runnable {
         return panel;
     }
 
-    // create status panel container author
+    
     private JPanel createStatusPanel() {
         JPanel panel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
         panel.setBackground(Color.lightGray);
@@ -116,7 +109,7 @@ public class MainFrame extends JFrame implements ActionListener, Runnable {
         return panel;
     }
 
-    // create a button
+    
     private JButton createButton(String buttonName) {
         JButton btn = new JButton(buttonName);
         btn.addActionListener(this);
